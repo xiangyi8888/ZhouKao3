@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/border">
+
+    <CheckBox
+        android:id="@+id/ccb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:background="@drawable/borderc"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:id="@+id/gImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/gName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="见覅偶睡觉放假死哦就你打飞机爱哦家私欧弟就覅偶"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥50.00"
+                android:textSize="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <demo.xiangyi.com.zhou_er.addordeducing.AddSubLayout
+                android:id="@+id/addsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"></demo.xiangyi.com.zhou_er.addordeducing.AddSubLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
